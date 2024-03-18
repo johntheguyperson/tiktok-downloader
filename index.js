@@ -1,3 +1,12 @@
+/*  by Naufal Taufiq Ridwan
+    Github : https://github.com/n0l3r
+
+    Dockerized, Webapp/Server, and Cloud deployable by timmbobb
+    Github : https://github.com/timmbobb
+
+    Don't remove credit.
+*/
+
 // Dependencies
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -87,7 +96,7 @@ app.get('/', (req, res) => {
     res.sendFile('index.html', { root: __dirname });
 });
 
-// Updated /download endpoint
+// /download endpoint
 // Endpoint to handle single video download
 app.get('/download', async (req, res) => {
     const url = req.query.url;
